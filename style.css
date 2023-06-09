@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+    background-image: linear-gradient(to right,lightblue,darkblue);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+button {
+    background-color: lightblue;
+    width: 100%;
+}
+input {
+    width: 100%;
+}
+h2,h3,h4,h5 {
+    font-weight: bold;
+}
