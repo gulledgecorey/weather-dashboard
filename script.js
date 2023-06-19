@@ -2,6 +2,12 @@ var apiKey = "988f4d5b649b65049c5d0dcb76dc8228";
 document.querySelector("button").addEventListener("click", function(e){
     e.preventDefault()
 
+let historyButton=document.createElement("button");
+document.querySelector("#search-section").appendChild(historyButton);
+historyButton.textContent=document.querySelector("input").value;
+
+
+
 fetch("https://api.openweathermap.org/data/2.5/weather?q="+document.querySelector("input").value+"&appid=988f4d5b649b65049c5d0dcb76dc8228&units=imperial")
 .then(res=>res.json())
 .then(data=>{
@@ -45,11 +51,6 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?lat="+data.coord.lat+"&l
     document.querySelector("#temp5").textContent="Temp: "+data.list[38].main.temp +" °F";
     document.querySelector("#wind5").textContent="Wind: "+data.list[38].wind.speed +" MPH";
     document.querySelector("#humidity5").textContent="Humidity: "+data.list[38].main.humidity +" %";
-
-
-
-
-
 
 })
 

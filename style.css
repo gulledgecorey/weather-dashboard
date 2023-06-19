@@ -10,6 +10,7 @@ header {
 button {
     background-color: lightblue;
     width: 100%;
+    margin: 5px;
 }
 input {
     width: 100%;
